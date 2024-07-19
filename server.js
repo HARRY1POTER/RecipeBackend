@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3333;
 // app.use("/uploads", express.static("uploads"));
-app.use("/uploads", express.static("upload"));
+app.use("/upload", express.static("/tmp"));
 
 app.get("/", (req, res) => {
   res.send("This is Updated Backend ");
