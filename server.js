@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3333;
 app.use("/upload", express.static("/tmp"));
 
 app.get("/", (req, res) => {
-  res.send("This is Backend");
+  res.send("This is Updated Backend ");
 });
 
 const userRouter = require("./Routers/userRoute");
