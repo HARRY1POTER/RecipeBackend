@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3333;
 // app.use("/uploads", express.static("uploads"));
-app.use("/upload", express.static("/tmps"));
+app.use("/upload", express.static("/tmp"));
 
 
 /* const isProduction = process.env.NODE_ENV === 'production';
