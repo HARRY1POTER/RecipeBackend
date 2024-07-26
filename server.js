@@ -5,10 +5,10 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3333;
 // app.use("/uploads", express.static("uploads"));
-// app.use("/upload", express.static("/tmp"));
+app.use("/upload", express.static("/tmp"));
 
 
-const isProduction = process.env.NODE_ENV === 'production';
+/* const isProduction = process.env.NODE_ENV === 'production';
 console.log("🚀 ~ isProduction:", isProduction);
  
 const liveStoragePath = process.env.LIVE_STORAGE_PATH || '/tmp';
@@ -17,7 +17,7 @@ const storagePath = isProduction ? liveStoragePath : localStoragePath;
  
 console.log("🚀 ~ liveStoragePath:", liveStoragePath);
 console.log("🚀 ~ localStoragePath:", localStoragePath);
-console.log("🚀 ~ storagePath:", storagePath);
+console.log("🚀 ~ storagePath:", storagePath); */
 
 app.get("/", (req, res) => {
   res.send("This is Updated Backend ");
